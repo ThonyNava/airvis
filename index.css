@@ -1,3 +1,7 @@
+/*--------------------------------------
+     ### DESKTOP ###
+--------------------------------------*/
+
 :root, body, .standar_config { 
     margin: 0px;
     border: 0px;
@@ -11,24 +15,27 @@ body{
     margin: 0px;
     border: 0px;
     padding: 0px;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: -webkit-fill-available;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .site-container{
     margin: 0px;
     border: 0px;
     padding: 0px;
-    width: 100%;
+    width: 100vw;
+    max-width: 1400px;
     height: auto;
     /* border: 4px solid aquamarine; */
-    display: -webkit-inline-box;
+    display: flex;
 }
 
 .section_img{
     /* position: absolute; */
-    width: 53%;
+    width: auto;
     height: -webkit-fill-available;
     /* margin-left: 25%; */
     /* border: 4px solid grey; */
@@ -48,9 +55,10 @@ body{
 
 .section_info{
     /* margin-left: 50%; */
-    width: 47%;
+    width: 50%;
     /* border: 4px solid grey; */
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -154,7 +162,8 @@ a svg:hover #instagram_3,
 a svg:hover #reddit,
 a svg:hover #facebook,
 a svg:hover #medium{ 
-  fill: #4AF2F2;
+fill: #4AF2F2;
+fill-opacity: 0.4;
 }
 
 a svg #youtube,
@@ -173,35 +182,44 @@ a svg #medium{
 
 .container_user{
     margin-bottom: -50px;
-    width: 500px;
-    height: 700px;
+    width: fit-content;
+    height: fit-content;
     /* border: 1px solid red; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
+.li_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container_icon{
     width: fit-content;
+    height: fit-content;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
 }
 
-.user_icon{
+.user_icon,
+.user_icon_2{
     width: 600px;
     height: 600px;
 }
 
 #thony_path{
     fill: #B6B9C7;
-    fill-opacity: 0.2;
+    fill-opacity: 0.4;
 }
 
 .container_user_2{
-    margin-left: -250px;
+    margin-left: -300px;
     margin-bottom: -50px;
-    width: 500px;
-    height: 700px;
+    width: fit-content;
+    height: fit-content;
     /* border: 1px solid red; */
     display: flex;
     align-items: flex-end;
@@ -210,16 +228,524 @@ a svg #medium{
 
 .container_icon_2{
     width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: flex-end;
-}
-
-.user_icon_2{
-    width: 600px;
-    height: 600px;
+    justify-content: center;
 }
 
 #zaquiel_path{
     fill: #4BF2F2;
-    fill-opacity: 0.2;
+    fill-opacity: 0.4;
+}
+
+.container_icons_general{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.container_icons_links{
+    position: absolute;
+    display: flex;
+    width: fit-content
+}
+
+.container_icon_link,
+.container_icon_link_2{
+    width: 23vw;
+    height: 45vw;
+}
+
+.container_link_2{
+    margin-left: 2vw;
+}
+
+#container_icon_link:hover + #thony_path{
+    fill: #000; 
+    fill-opacity: 0.4;
+}
+
+#container_icon_link + #thony_path{ 
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+#svg_thony_t,
+#svg_zaquiel_t{
+display: none;
+}
+
+#svg_thony_m,
+#svg_zaquiel_m{
+    display: none;
+}
+
+/*--------------------------------------
+     ### TABLET ###
+--------------------------------------*/
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1199px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .site-container {
+        width: 100vw;
+        height: -webkit-fill-available;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: baseline;
+        align-items: center;
+    }
+
+    #isologo{
+        width: 320px;
+    }
+
+    #svg_thony,
+    #svg_zaquiel{
+        display: none;
+    }
+
+    #svg_thony_t,
+    #svg_zaquiel_t{
+        display: flex;
+    }
+
+    #svg_thony_m,
+    #svg_zaquiel_m{
+        display: none;
+    }
+
+    .section_info{
+        margin-top: 0;
+        width: 53%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info{
+        margin-top: 0;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_box{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    #text_1{
+        margin: 0;
+    width: 350px;
+    text-align: center;
+    }
+
+    .contact_box{
+        margin: 30px 0px 40px 0px;
+    }
+
+    .rrss_box{
+        margin-left: 10px;
+        width: 388px;
+    }
+
+    .sm_icons{
+        flex-wrap: wrap;
+    }
+
+    .section_img{
+        margin-top: 5vh;
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .container_img{
+        width: 691px;
+        height: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_icon_link,
+    .container_icon_link_2{
+        width: 200px;
+        height: 380px;
+    }
+
+    .user_icon,
+    .user_icon_2{
+    width: 400px;
+    height: 400px;
+    }
+
+    .container_icons_general{
+        position: relative;
+        margin-top: 0px ;
+        width: 80vw;
+        align-items: flex-end;
+    }
+
+    .container_icons_general,
+    .container_icons_links{
+        justify-content: space-between;
+    }
+
+    .container_icons_links{
+        margin-left: 0;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 840px) 
+  and (max-device-width: 1199px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .site-container {
+      width: 100vw;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    #svg_thony,
+    #svg_zaquiel{
+        display: none;
+    }
+
+    #svg_thony_t,
+    #svg_zaquiel_t{
+    display: flex;
+    }
+
+    #svg_thony_m,
+    #svg_zaquiel_m{
+    display: none;
+    }
+
+    .section_info{
+        margin-top: 10vh;
+        width: 53%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info{
+        margin-top: 0;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_box{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    #text_1{
+        margin: 0;
+    width: 350px;
+    text-align: center;
+    }
+
+    .contact_box{
+        margin: 20px 0px 20px 0px;
+    }
+
+    .rrss_box{
+        margin-left: 10px;
+        width: 388px;
+    }
+
+    .sm_icons{
+        flex-wrap: wrap;
+    }
+
+    .section_img{
+        margin-top: 10vh;
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .container_img{
+        width: 691px;
+        height: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_icon_link,
+    .container_icon_link_2{
+        width: 200px;
+        height: 380px;
+    }
+
+    .user_icon,
+    .user_icon_2{
+    width: 400px;
+    height: 400px;
+    }
+
+    .container_icons_general{
+        position: relative;
+        margin-top: 0px ;
+        width: 80vw;
+        align-items: flex-end;
+    }
+
+    .container_icons_general,
+    .container_icons_links{
+        justify-content: space-between;
+    }
+
+    .container_icons_links{
+        margin-left: 0;
+    }
+
+}
+
+/*--------------------------------------
+     ### MOBILE ###
+--------------------------------------*/
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .site-container {
+        width: 100vw;
+        height: 100vh;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        align-items: baseline;
+    }
+
+    #svg_thony,
+    #svg_zaquiel{
+        display: none;
+    }
+    
+    #svg_thony_t,
+    #svg_zaquiel_t{
+        display: none;
+    }
+    
+        #svg_thony_m,
+        #svg_zaquiel_m{
+        display: flex;
+        }
+    
+    .section_info{
+        margin-top: 0;
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info{
+        margin-top: 20%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text_box{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    #text_1{
+    width: 350px;
+    text-align: center;
+    }
+
+    .rrss_box{
+        margin-left: 22px;
+        width: 200px;
+    }
+
+    .sm_icons{
+        flex-wrap: wrap;
+    }
+
+    .section_img,
+    .container_img{
+        margin-top: 0;
+        max-width: 100vw;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .container_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user_icon,
+    .user_icon_2{
+    width: 400px;
+    height: 400px;
+    }
+
+    .container_icon_link,
+    .container_icon_link_2{
+        width: 200px;
+        height: 300px;
+    }
+
+    .container_icons_general,
+    .container_icons_links{
+        max-width: 100vw;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .container_user{
+        margin-right: 110px;
+    }
+
+    .container_icons_links{
+        margin-top: 30px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 839px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .site-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #svg_thony,
+    #svg_zaquiel{
+        display: none;
+    }
+    
+    #svg_thony_t,
+    #svg_zaquiel_t{
+        display: none;
+    }
+    
+        #svg_thony_m,
+        #svg_zaquiel_m{
+        display: flex;
+        }
+    
+    .section_info{
+        margin-top: 0;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info{
+        margin-top: 0%;
+        width: 95%;
+        display: block;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .text_box{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    #text_1{
+    width: 350px;
+    text-align: center;
+    }
+
+    .rrss_box{
+        margin-left: 0px;
+        width: 388px;
+    }
+
+    #text_1{
+        text-align: left;
+    }
+
+    .sm_icons{
+        flex-wrap: wrap;
+    }
+
+    .section_img,
+    .container_img{
+        margin-top: 0;
+        max-width: 50vw;
+        width: fit-content;
+        height: 100vh;
+        align-items: flex-end;
+    }
+
+    .container_img{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .container_icon_link,
+    .container_icon_link_2{
+        width: 200px;
+        height: 300px;
+    }
+
+    .container_icons_general,
+    .container_icons_links{
+        max-width: fit-content;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .user_icon,
+    .user_icon_2{
+    width: 400px;
+    height: 400px;
+    }
+
+    .container_user{
+        margin-right: 110px;
+    }
 }
