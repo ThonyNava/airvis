@@ -6,20 +6,13 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    display: flex;
-    width: 100%;
-    height: -webkit-fill-available;
 }
 
 body{
-    margin: 0px;
+    margin: 0%;
     border: 0px;
     padding: 0px;
     width: 100vw;
-    height: -webkit-fill-available;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .site-container{
@@ -533,14 +526,14 @@ display: none;
   and (max-device-width: 767px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+
     .site-container {
-        width: 100vw;
-        height: 100vh;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap-reverse;
-        align-items: baseline;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
     }
 
     #svg_thony,
@@ -560,7 +553,6 @@ display: none;
     
     .section_info{
         margin-top: 0;
-        position: absolute;
         width: fit-content;
         height: fit-content;
         display: flex;
@@ -568,7 +560,7 @@ display: none;
     }
 
     .info{
-        margin-top: 20%;
+        margin-top: 5vh;
         width: 95%;
         display: flex;
         flex-direction: column;
@@ -583,10 +575,13 @@ display: none;
         justify-content: center;
     }
 
-    #text_1{
-    width: 350px;
+    #text_1,
+    #text_2{
+    width: 80vw;
+    font-size: 18px;
     text-align: center;
     }
+
 
     .rrss_box{
         margin-left: 22px;
@@ -613,8 +608,8 @@ display: none;
 
     .user_icon,
     .user_icon_2{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     }
 
     .container_icon_link,
@@ -631,7 +626,11 @@ display: none;
     }
 
     .container_user{
-        margin-right: 110px;
+        margin: 0;
+    }
+
+    .container_user_2{
+        margin: 0;
     }
 
     .container_icons_links{
@@ -686,25 +685,61 @@ display: none;
         align-items: center;
     }
 
+    .logo{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    #isologo{
+        width: 200px;
+    }
+
     .text_box{
         width: fit-content;
         height: fit-content;
         display: flex;
         justify-content: center;
     }
-
-    #text_1{
-    width: 350px;
-    text-align: center;
-    }
-
+    
     .rrss_box{
         margin-left: 0px;
-        width: 388px;
+        width: 300px;
+    }
+    
+    #text_1,
+    #text_2{
+        width: 280px;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    #text_1{
+        margin: 0 0 0 0;    
     }
 
-    #text_1{
-        text-align: left;
+    #text_2{
+        margin: 0 0 0 0;
+    }
+
+    .contact_box{
+        margin: 20px 0 20px 0;
+    }
+
+    .rrss_box, .ir{
+        display: flex;
+        align-items: center;
+        height: 35px;
+    }
+
+    .icon_wrapper{
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon{
+        width: 35px;
+        height: 35px;
     }
 
     .sm_icons{
@@ -717,19 +752,18 @@ display: none;
         max-width: 50vw;
         width: fit-content;
         height: 100vh;
-        align-items: flex-end;
     }
 
     .container_img{
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .container_icon_link,
     .container_icon_link_2{
-        width: 200px;
-        height: 300px;
+        width: 120px;
+        height: 200px;
     }
 
     .container_icons_general,
@@ -741,8 +775,8 @@ display: none;
 
     .user_icon,
     .user_icon_2{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     }
 
     .container_user{
