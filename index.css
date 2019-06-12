@@ -2,90 +2,92 @@
      ### DESKTOP ###
 --------------------------------------*/
 
-:root, body, .standar_config { 
+:root, *{ 
     margin: 0px;
     border: 0px;
     padding: 0px;
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0%;
     border: 0px;
     padding: 0px;
-    width: 100vw;
+    background-color: #ffffff;
+
 }
 
 .site-container{
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
     width: 100vw;
-    max-width: 1400px;
-    height: auto;
-    /* border: 4px solid aquamarine; */
+    max-width: 200vh;
+    height: 100vh;
+    max-height: 100vw;
     display: flex;
+    justify-content: center;
 }
 
 .section_img{
-    /* position: absolute; */
-    width: auto;
-    height: -webkit-fill-available;
-    /* margin-left: 25%; */
-    /* border: 4px solid grey; */
+    width: 55%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
 .container_img{
-    display: flex;
-    width: fit-content;
-    height: -webkit-fill-available;
-    display: flex;
+    width: 100%;
+    display: -webkit-box;
     align-items: flex-end;
     justify-content: center;
 }
 
 .section_info{
-    /* margin-left: 50%; */
-    width: 50%;
-    /* border: 4px solid grey; */
+    width: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .info{
-    width: 500px;
+    width: fit-content;
     height: fit-content;
-    /* border: 4px solid blue; */
 }
 
 .logo{
-    margin-bottom: 10px;
+    height: 12vh;
+    max-height: 12vw;
 }
 
 #isologo {
-    width: 260px;
+    height: 8.4vh;
+    max-height: 8.4vw;
 }
 
 .text_box{
-    width: 380px;
+    width: 36vh;
+    max-width: 36vw;
+    height: 14vh;
+    max-height: 14vw;
+    display: flex;
+    align-items: flex-start;
 }
 
 #text_1{
+    margin: 0;
     font-family: Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 23px;
+    font-size: 2.1vh;
     line-height: 1.15em;
     text-transform: none;
     letter-spacing: .01em;
-    color: #a3a3a3;
+    color: #B6B9C7;
 }
 
 .contact_box{
-    margin-bottom: 30px;
+    height: 5vh;
+    max-height: 5vw;
 }
 
 #text_2{
@@ -94,57 +96,46 @@ body{
     font-family: Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 23px;
+    font-size: 2.1vh;
     line-height: 1.15em;
     text-transform: uppercase;
     text-transform: none;
     letter-spacing: .02em;
     font-style: normal;
     text-decoration: none;
-    color: #a3a3a3;
+    color: #B6B9C7;
 }
 
 .sm_icons{
+    width: 40vh;
+    max-width: 40vw;
     display: flex;
-    font-size: 0;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
-    width: fit-content;
 }
 
 ul, ol, li{
     list-style: none;
 }
 
-a, svg, .ir{
-    width: auto;
-    height: auto;
-    display: block;
-}
-
-a{
-    height: 9.6rem;
-    width: 9.6rem;
-}
-
 .icon_wrapper{
-    margin-right: 14px;
-    width: 50px;
-    height: 50px;
+    width: 6vh;
+    max-width: 6vw;
+    height: 6vh;
+    max-height: 6vw;
     display: flex;
-    align-items: center;
-}
-
-.ir {
-    width: 50px;
-    height: 50px;
-    /* border: 1px solid red; */
+    justify-content: left;
+    align-items: flex-start;
 }
 
 .icon{
     fill: #B6B9C7;
+    width: 4vh;
+    max-width: 4vw;
+    height: 4vh;
+    max-height: 4vw;
 }
 
 a svg:hover #youtube,
@@ -173,108 +164,102 @@ a svg #medium{
     -webkit-transition-timing-function: ease-in-out;
 }
 
-.container_user{
-    margin-bottom: -50px;
-    width: fit-content;
-    height: fit-content;
-    /* border: 1px solid red; */
+.container_users,
+.container_icons_links{
+    width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
-.li_user{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container_icons_links{
+    margin-left: -100%
 }
 
+.container_user_1,
+.container_user_2,
 .container_icon{
-    width: fit-content;
-    height: fit-content;
+    width: inherit;
+    height: inherit;
+}
+
+.container_user_1,
+.container_link_1{
+    margin-right: -10%;
+}
+
+.container_user_2,
+.container_link_2{
+    margin-left: -10%;
+}
+
+.container_icon,
+.container_user_1,
+.container_user_2{
+    display: flex;
+    justify-content: center;
+}
+
+.user_box{
+    width: 100%;    
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.user_icon,
-.user_icon_2{
-    width: 600px;
-    height: 600px;
+.user_icon{
+    width: 100%;    
+    height: 100%;
 }
 
-#thony_path{
+.container_link{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+.link_li{
+    width: 63%;
+    height: fit-content;
+}
+
+.link_box{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    max-height: 100%;
+}
+
+#zaquiel_path{
     fill: #B6B9C7;
     fill-opacity: 0.4;
 }
 
-.container_user_2{
-    margin-left: -300px;
-    margin-bottom: -50px;
-    width: fit-content;
-    height: fit-content;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.container_icon_2{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-#zaquiel_path{
-    fill: #4BF2F2;
+#thony_path{
+    fill: #4AF2F2;
     fill-opacity: 0.4;
 }
 
-.container_icons_general{
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-}
+/*--------------------------------------
+     ### END DESKTOP ###
 
-.container_icons_links{
-    position: absolute;
-    display: flex;
-    width: fit-content
-}
 
-.container_icon_link,
-.container_icon_link_2{
-    width: 23vw;
-    height: 45vw;
+@media only screen 
+  and (min-device-height: 1200px) 
+  and (orientation: portrait){
+    @media only screen 
+    and (min-device-height: 100vw){
+        #text_1,
+        #text_2{
+            font-size: 2.6vw;
+        }
+    } 
 }
+--------------------------------------*/
 
-.container_link_2{
-    margin-left: 2vw;
-}
-
-#container_icon_link:hover + #thony_path{
-    fill: #000; 
-    fill-opacity: 0.4;
-}
-
-#container_icon_link + #thony_path{ 
-    transition: 200ms;
-    transition-timing-function: ease-in-out;
-    -webkit-transition: 200ms;
-    -webkit-transition-timing-function: ease-in-out;
-}
-
-#svg_thony_t,
-#svg_zaquiel_t{
-display: none;
-}
-
-#svg_thony_m,
-#svg_zaquiel_m{
-    display: none;
-}
+/*--------------------------------------
+     ### END DESKTOP ###
+--------------------------------------*/
 
 /*--------------------------------------
      ### TABLET ###
@@ -284,42 +269,21 @@ display: none;
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1199px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (orientation: portrait) {
+
+
 
     .site-container {
-        width: 100vw;
-        height: -webkit-fill-available;
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: baseline;
-        align-items: center;
-    }
-
-    #isologo{
-        width: 320px;
-    }
-
-    #svg_thony,
-    #svg_zaquiel{
-        display: none;
-    }
-
-    #svg_thony_t,
-    #svg_zaquiel_t{
-        display: flex;
-    }
-
-    #svg_thony_m,
-    #svg_zaquiel_m{
-        display: none;
+        max-height: none;
     }
 
     .section_info{
-        margin-top: 0;
-        width: 53%;
+        width: 100vw;
+        height: 55vh;
         display: flex;
         justify-content: center;
+        align-items: flex-end;
     }
 
     .info{
@@ -333,187 +297,70 @@ display: none;
     }
 
     .text_box{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
+        width: 60vh;
+        max-width: 60vw;
+        height: 24vh;
+        max-height: 24vw;
         justify-content: center;
     }
 
-    #text_1{
-        margin: 0;
-    width: 350px;
-    text-align: center;
+    #text_1,
+    #text_2{
+        font-size: 2.3vh;
+        text-align: center;
     }
 
     .contact_box{
-        margin: 30px 0px 40px 0px;
-    }
-
-    .rrss_box{
-        margin-left: 10px;
-        width: 388px;
+        height: 10vh;
+        max-height: 10vw;
     }
 
     .sm_icons{
+        width: 60vh;
+        max-width: 60vw;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon_wrapper {
+        width: 9vh;
+        max-width: 9vw;
+        height: 9vh;
+        max-height: 9vw;
+    }
+
+    .icon,
+    #icon_medium{
+        width: 6vh;
+        max-width: 6vw;
+        height: 6vh;
+        max-height: 6vw;
     }
 
     .section_img{
-        margin-top: 5vh;
-        width: 90vw;
-        height: 40vh;
+        width: 100vw;
+        height: 45vh;
     }
 
-    .container_img{
-        width: 691px;
-        height: -webkit-fill-available;
+    .container_img,
+    .container_users{
         display: flex;
         justify-content: center;
     }
 
-    .container_icon_link,
-    .container_icon_link_2{
+    .container_icon_link{
         width: 200px;
         height: 380px;
     }
 
-    .user_icon,
-    .user_icon_2{
-    width: 400px;
-    height: 400px;
+    .user_icon{
+    width: 40vh;
+    height: 40vh;
     }
 
-    .container_icons_general{
-        position: relative;
-        margin-top: 0px ;
-        width: 80vw;
-        align-items: flex-end;
-    }
-
-    .container_icons_general,
-    .container_icons_links{
-        justify-content: space-between;
-    }
-
-    .container_icons_links{
-        margin-left: 0;
-    }
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 840px) 
-  and (max-device-width: 1199px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .site-container {
-      width: 100vw;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    #svg_thony,
-    #svg_zaquiel{
-        display: none;
-    }
-
-    #svg_thony_t,
-    #svg_zaquiel_t{
-    display: flex;
-    }
-
-    #svg_thony_m,
-    #svg_zaquiel_m{
-    display: none;
-    }
-
-    .section_info{
-        margin-top: 10vh;
-        width: 53%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .info{
-        margin-top: 0;
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .text_box{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-    }
-
-    #text_1{
-        margin: 0;
-    width: 350px;
-    text-align: center;
-    }
-
-    .contact_box{
-        margin: 20px 0px 20px 0px;
-    }
-
-    .rrss_box{
-        margin-left: 10px;
-        width: 388px;
-    }
-
-    .sm_icons{
-        flex-wrap: wrap;
-    }
-
-    .section_img{
-        margin-top: 10vh;
-        width: 90vw;
+    .link_box {
         height: 40vh;
     }
-
-    .container_img{
-        width: 691px;
-        height: -webkit-fill-available;
-        display: flex;
-        justify-content: center;
-    }
-
-    .container_icon_link,
-    .container_icon_link_2{
-        width: 200px;
-        height: 380px;
-    }
-
-    .user_icon,
-    .user_icon_2{
-    width: 400px;
-    height: 400px;
-    }
-
-    .container_icons_general{
-        position: relative;
-        margin-top: 0px ;
-        width: 80vw;
-        align-items: flex-end;
-    }
-
-    .container_icons_general,
-    .container_icons_links{
-        justify-content: space-between;
-    }
-
-    .container_icons_links{
-        margin-left: 0;
-    }
-
 }
 
 /*--------------------------------------
@@ -524,273 +371,188 @@ display: none;
 @media only screen 
   and (min-device-width: 0px) 
   and (max-device-width: 767px) 
-  and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
     .site-container {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: center;
+        flex-direction: column-reverse;
+        max-height: none;
     }
 
-    #svg_thony,
-    #svg_zaquiel{
-        display: none;
-    }
-    
-    #svg_thony_t,
-    #svg_zaquiel_t{
-        display: none;
-    }
-    
-        #svg_thony_m,
-        #svg_zaquiel_m{
-        display: flex;
-        }
-    
     .section_info{
-        margin-top: 0;
-        width: fit-content;
-        height: fit-content;
-        display: flex;
+        width: 100vw;
+        height: 60vh;
         justify-content: center;
+        align-items: flex-end;
     }
 
     .info{
-        margin-top: 5vh;
-        width: 95%;
+        margin-top: 0;
+        width: fit-content;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    #isologo {
+        height: 16vh;
+        max-height: 16vw;
+    }
+
+    .logo {
+        height: 20vh;
+        max-height: 20vw;
+    }
+
     .text_box{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
+        width: 75vh;
+        max-width: 75vw;
+        height: 34vh;
+        max-height: 34vw;
         justify-content: center;
     }
 
     #text_1,
     #text_2{
-    width: 80vw;
-    font-size: 18px;
-    text-align: center;
+        font-size: 4.5vw;
+        text-align: center;
     }
 
-
-    .rrss_box{
-        margin-left: 22px;
-        width: 200px;
+    .contact_box{
+        height: 12vh;
+        max-height: 12vw;
     }
 
     .sm_icons{
+        width: 50vh;
+        max-width: 50vw;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .section_img,
-    .container_img{
-        margin-top: 1vh;
-        width: 360px;
-        width: fit-content;
-        height: fit-content;
+    .icon_wrapper {
+        width: 14vh;
+        max-width: 14vw;
+        height: 14vh;
+        max-height: 14vw;
+    }
+
+    .icon,
+    #icon_instagram,
+    #icon_medium{
+        width: 10vh;
+        max-width: 10vw;
+        height: 10vh;
+        max-height: 10vw;
+    }
+
+    .section_img{
+        width: 100vw;
+        height: 40vh;
     }
 
     .container_img{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
-    .user_icon,
-    .user_icon_2{
-    width: 250px;
-    height: 250px;
-    }
-
-    .container_icon_link,
-    .container_icon_link_2{
-        width: 200px;
-        height: 300px;
-    }
-
-    .container_icons_general,
-    .container_icons_links{
-        max-width: 100vw;
-        width: fit-content;
+    .container_users{
         justify-content: center;
     }
 
-    .container_user{
-        margin: 0;
+    .container_icon_link{
+        width: 200px;
+        height: 380px;
     }
 
-    .container_user_2{
-        margin-left: -90px;
+    .link_box{
+        height: 40vh;
     }
-
-    .container_icons_links{
-        margin-top: 30px;
-    }
-
 }
 
 /* Landscape */
 @media only screen 
   and (min-device-width: 0px) 
-  and (max-device-width: 839px) 
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (max-device-width: 839px)
   and (orientation: landscape) {
-    .site-container {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
-    #svg_thony,
-    #svg_zaquiel{
-        display: none;
-    }
-    
-    #svg_thony_t,
-    #svg_zaquiel_t{
-        display: none;
-    }
-    
-        #svg_thony_m,
-        #svg_zaquiel_m{
-        display: flex;
-        }
-    
     .section_info{
-        margin-top: 0;
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-    }
-
-    .info{
-        margin-top: 0%;
-        width: 95%;
-        display: block;
+        width: 45vw;
+        height: 100vh;
         justify-content: left;
         align-items: center;
     }
 
-    .logo{
-        height: 50px;
+    .info{
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
     }
 
-    #isologo{
-        width: 200px;
+    #isologo {
+        height: 16vh;
+        max-height: 16vw;
+    }
+
+    .logo {
+        height: 20vh;
+        max-height: 20vw;
     }
 
     .text_box{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
+        width: 75vh;
+        max-width: 75vw;
+        height: 28vh;
+        max-height: 28vh;
         justify-content: center;
     }
-    
-    .rrss_box{
-        margin-left: 0px;
-        width: 300px;
-    }
-    
+
     #text_1,
     #text_2{
-        width: 280px;
-        font-size: 18px;
+        font-size: 4.2vh;
         text-align: left;
-    }
-    
-    #text_1{
-        margin: 0 0 0 0;    
-    }
-
-    #text_2{
-        margin: 0 0 0 0;
     }
 
     .contact_box{
-        margin: 20px 0 20px 0;
-    }
-
-    .rrss_box, .ir{
-        display: flex;
-        align-items: center;
-        height: 35px;
-    }
-
-    .icon_wrapper{
-        width: 35px;
-        height: 35px;
-    }
-
-    .icon{
-        width: 35px;
-        height: 35px;
+        height: 10vh;
+        max-height: 10vw;
     }
 
     .sm_icons{
+        width: 80vh;
+        max-width: 80vw;
         flex-wrap: wrap;
+        justify-content: left;
     }
 
-    .section_img,
-    .container_img{
-        height: auto;
-        display: flex;
-        max-width: 50vw;
+    .icon_wrapper {
+        width: 11vh;
+        max-width: 11vw;
+        height: 11vh;
+        max-height: 11vw;
+    }
+
+    .icon{
+    width: 8vh;
+    max-width: 8vw;
+    height: 8vh;
+    max-height: 8vw;
+    }
+
+    .section_img{
+        width: 55vw;
+        height: 100vh;
     }
 
     .container_img{
-        margin-top: 80px;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
-    .container_icon_link,
-    .container_icon_link_2{
-        width: 150px;
-        height: 250px;
-    }
-
-    .container_icons_general,
-    .container_icons_links{
-        max-width: fit-content;
-        width: fit-content;
-        justify-content: flex-end;
-    }
-
-    .user_icon,
-    .user_icon_2{
-    width: 255px;
-    height: 255px;
-    }
-
-    .container_user{
-        margin-right: 0;
-    }
-
-    .container_user_2{
-        margin-left: -110px;
-    }
-
-    .container_link{
-        margin-top: 20px;
-        height: 100vh;
-        display: flex;
-        align-items: flex-end;
+    .container_icon_link{
+        width: 200px;
+        height: 380px;
     }
 }
